@@ -262,6 +262,7 @@ body{
   inset:14px;
   border-radius:28px;
   border:1px solid rgba(212,175,114,.12);
+  pointer-events:none;
 }
 
 .card-tag{
@@ -316,34 +317,25 @@ body{
   display:inline-flex;
   justify-content:center;
   align-items:center;
-
   margin-top:45px;
-
   padding:16px 38px;
-
   border-radius:60px;
-
   text-decoration:none;
-
   color:var(--cream);
-
   border:1px solid rgba(212,175,114,.35);
-
-  background:rgba(255,255,255,.05);
-
+  background:linear-gradient(135deg,#d4af72,#b76e79);
   transition:.4s;
-
   letter-spacing:4px;
-
   text-transform:uppercase;
-
   font-size:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+    position:relative;
+  z-index:10;
 }
 
 .btn:hover{
-  background:var(--gold);
-  color:#111;
-  transform:translateY(-4px);
+  transform:translateY(-4px) scale(1.03);
+  box-shadow:0 18px 40px rgba(0,0,0,.45);
 }
 
 /* FAMILY */
@@ -836,8 +828,7 @@ footer{
       <a
         class="btn"
         href="https://maps.app.goo.gl/ghVLWqrtXbgdwgbc6"
-        target="_blank"
-      >
+        target="_blank">
         Get Directions
       </a>
 
